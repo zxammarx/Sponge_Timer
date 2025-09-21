@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sponge Timer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="icon.png">
+</head>
+<body>
+
+  <video autoplay muted loop id="bg-video">
+    <source src="mr.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="container">
+    <div class="left">
+      <div class="saved-times" id="savedTimes"></div>
+    </div>
+
+    <div class="center">
+      <div class="time-display" id="display">00:00:00</div>
+    </div>
+
+    <div class="right">
+      <select id="fieldSelect"></select>
+
+      <div class="topic-controls">
+        <input type="text" id="newTopic" placeholder="New topic name">
+        <button id="addTopicBtn">Add Topic</button>
+        <button id="removeTopicBtn">Remove Selected</button>
+      </div>
+
+      <button id="startBtn">Start</button>
+      <button id="stopBtn">Stop</button>
+      <button id="resetBtn">Reset</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
